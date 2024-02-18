@@ -1,0 +1,26 @@
+let Guest_List: string[] = ['Cristiano Ronaldo','Lionel Messi','Erling Haaland'];
+
+// for(let j = 0; j < Guest_List.length; j++){
+//     console.log(`Dear, `+ Guest_List[j] +`\n\nIt would be a pleasure to host you for dinner. I'm a big admirer of your achievements and would love to chat and learn more about you.\nThank You!\n\n`);
+// }
+
+let absent_guest: string = 'Erling Haaland';
+let new_guest: string = 'Neymar';
+
+Guest_List[2] = new_guest;
+
+for(let i = 0; i < Guest_List.length; i++){
+    console.log(`Dear, `+ Guest_List[i] +`\n\nIt would be a pleasure to host you for dinner. I'm a big admirer of your achievements and would love to chat and learn more about you.\nThank You!\n\n`);
+}
+
+console.log(`Mr. ${absent_guest} is not coming to the party`);
+
+console.log('Good news, I found a bigger dinner table so I am inviting 3 more guests.');
+
+Guest_List.unshift('Kylian Mbappe');
+Guest_List.splice(2, 0, 'Mohamed Salah');
+Guest_List.push('Lautaro Martinez');
+
+for(let k = 0; k < Guest_List.length; k++){
+    console.log(`Dear, `+ Guest_List[k] +`\n\nIt would be a pleasure to host you for dinner. I'm a big admirer of your achievements and would love to chat and learn more about you.\nThank You!\n\n`);
+}
